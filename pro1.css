@@ -68,7 +68,9 @@ header {
   background-color: darkorange;
 }
 
-body {
+#body {
+  background-color: darkorange;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #mainContainer {
@@ -83,8 +85,16 @@ body {
 .secondryContainer {
   border: 1px solid white;
   text-align: center;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 10px;
 }
-
+.carName {
+  font-size: 30px;
+}
+#bt {
+  color: black;
+}
 @media (max-width: 400px) {
   #mainContainer {
     grid-template-columns: 1fr;
@@ -93,4 +103,27 @@ body {
 .img {
   width: 200px;
   height: 200px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  background-color: darkorange;
+}
+.div22 {
+  background-color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+#buttn {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }

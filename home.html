@@ -12,20 +12,40 @@
     
 
 <body id="body">
+   <div class="head"> 
+    <h1><b>مرحبا بكم في موقعكم لعرض السيارات</b></h1>
+   </div> 
+    <hr>
+    
+    <div class="search">
+        <input type="text" placeholder="للبحث عن سياره">
+
+
+        <button id="buttn" onclick="ADD()"> ابحث</button>
+    </div>
+    <div class="div22"> 
+    
+        <button id="hideBtn" onclick="hideHandler()">لعرض سيارتك  اضغط هنا </button>
+        <button id="showBtn" onclick="showHandler()"> الرجوع للقائمه</button>
+    </div>
     <div id="mainContainer"></div>
 
-    <input type="text" placeholder="الاسم" id="name">
-    <input type="number" placeholder="الموديل" id="age">
-    <input type="text" placeholder="ضع رابط الصوره هنا " id="imgInput">
-    <input type="text" placeholder="الوصف" id="model">
-    <input type="number" placeholder="السعر" id="price">
-
-    <button id="btn" onclick="addStudent()">Add</button>
-    <button id="hideBtn" onclick="hideHandler()">Hide Button</button>
-    <button id="showBtn" onclick="showHandler()">Show Button</button>
-    <button id="remove" onclick="removeHandler()">Delete</button>
-
     
+    <div class="hide" style="display: none;">
+        <p> لعرض سيارتك ارجو تعبئة البيانات في الحقول التاليه</p>
+        <input type="text" placeholder="الاسم" id="name"><br>
+        <input type="number" placeholder="الموديل" id="age"><br>
+        <input type="text" placeholder="ضع رابط الصوره هنا " id="imgInput"><br>
+        <input type="text" placeholder="الوصف" id="model"><br>
+        <input type="number" placeholder="السعر" id="price">
+    </div>
+
+    <button id="btn" onclick="addCar()">اضف</button>
+   
+       
+    
+    
+
 <script src="myPro.js"></script>
 </body>
 </html>
