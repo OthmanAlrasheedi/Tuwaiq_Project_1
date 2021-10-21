@@ -57,12 +57,17 @@ function renderArr(array) {
   for (let i = 0; i < array.length; i++) {
     const div = $(`<div class="secondryContainer">
           <h1 class ="carName">${array[i].name}</h1>
-          <h1>${array[i].age}</h1>
-          <h1>${array[i].price}</h1>
+          <p>${array[i].age}</p>
+          <p>${array[i].price}</p>
           <img  class ="img"src =${array[i].img} >
-          <h1>${array[i].model}</h1>
-          <button id="bt"  onclick="remove(${i})">delete</button>
+          <p>${array[i].model}</p>
+          <div class ="commm">
+          <textarea class="texta${i}" ></textarea>
+          <button   onclick="add(${i})">ااضافه تعليق</button>
+</div>
 
+          <button  class="del" onclick="remove(${i})"> حذف المنتج</button>
+            <div id ="comment${i}" class = "com1"> </div>
       </div>`);
     mainContainer.append(div);
   }
@@ -94,4 +99,13 @@ function remove(i) {
   console.log(i);
   mainContainer.html("");
   renderArr(allCar);
+}
+function add(i) {
+  let com = $(`.texta${i}`).val();
+  const div = $(`<div class ="com2">${com}</div>`);
+  $(`#comment${i}`).append(div);
+  // allCar.push(i, 1);
+  console.log(i);
+  // mainContainer.html("");
+  // renderArr(allCar);
 }

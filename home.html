@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعكم للسيارات</title>
+    <title>موقعكم الافضل</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="pro1.css">
@@ -13,26 +13,28 @@
 
 <body id="body">
    <div class="head"> 
-    <h1><b>مرحبا بكم في موقعكم لعرض السيارات</b></h1>
-   </div> 
-    <hr>
+      
+</div> 
+    <h1><b>مرحبا بكم في موقعكم الافضل لعرض المنتجات  </b></h1><br>
+    <h1 id="h1">!نوفر لكم بيع وعرض المنتجات بضغطت زر فقط </h1>
+   
+    
     
     <div class="search">
-        <input type="text" placeholder="للبحث عن سياره">
+        <input type="text" placeholder="للبحث عن منتج">
 
 
         <button id="buttn" onclick="ADD()"> ابحث</button>
     </div>
     <div class="div22"> 
     
-        <button id="hideBtn" onclick="hideHandler()">لعرض سيارتك  اضغط هنا </button>
+        <button id="hideBtn" onclick="hideHandler()">لعرض منتجك  اضغط هنا </button>
         <button id="showBtn" onclick="showHandler()"> الرجوع للقائمه</button>
     </div>
     <div id="mainContainer"></div>
-
     
     <div class="hide" style="display: none;">
-        <p> لعرض سيارتك ارجو تعبئة البيانات في الحقول التاليه</p>
+        <p id="p"> :لعرض سيارتك ارجو تعبئة البيانات في الحقول التاليه</p>
         <input type="text" placeholder="الاسم" id="name"><br>
         <input type="number" placeholder="الموديل" id="age"><br>
         <input type="text" placeholder="ضع رابط الصوره هنا " id="imgInput"><br>
@@ -42,8 +44,6 @@
 
     <button id="btn" onclick="addCar()">اضف</button>
    
-       
-    
     
 
 <script src="myPro.js"></script>
